@@ -5,13 +5,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hepta+Slab&family=Kdam+Thmor+Pro&family=PT+Sans&family=Silkscreen&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
     </head>
+
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-row-padding img {margin-bottom: 12px}
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {width: 120px;background: rgb(0, 0, 0);}
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+        </style>
+
 <body>
 
     <!-- Header -->
     <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-        <img class="w3-image" src="https://www.w3schools.com/w3images/photographer.jpg" alt="Me" width="1500" height="600">
-        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+        <img class="w3-image" src="img/img-1.jpg" alt="Experience" width="1500" height="600">
+        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-black w3-center">
             <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Bambang Nugroho</h1>
             <h5 class="w3-hide-large" style="white-space:nowrap">Bambang Nugroho</h5>
             <h3 class="w3-hide-medium w3-hide-small">CONSULTANT</h3>
@@ -19,65 +38,99 @@
 
         <!-- Navbar (placed at the bottom of the header image) -->
         <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            <a href="#" class="w3-bar-item w3-button">PROFILE</a>
+            <a href="#experience" class="w3-bar-item w3-button">EXPERIENCE</a>
+            <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
         </div>
     </header>
 
     <!-- Navbar on small screens -->
     <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
         <div class="w3-bar w3-light-grey">
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            <a href="#" class="w3-bar-item w3-button">PROFILE</a>
+            <a href="#experience" class="w3-bar-item w3-button">EXPERIENCE</a>
+            <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
         </div>
     </div>
     <!-- Page content -->
-    <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
-        <!-- Images (Portfolio) -->
-        <img src="https://www.w3schools.com/w3images/ocean.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
-        <img src="https://www.w3schools.com/w3images/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
-        <img src="https://www.w3schools.com/w3images/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
-        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-        <img src="https://www.w3schools.com/w3images/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
 
-        <!-- Contact -->
-        <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
-            <h3 class="w3-center">Contact</h3>
-            <hr>
-            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
-                placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
-                congue ullam corper. Praesent tincidunt sed tellus.</p>
+    <div class="w3-content w3-justify w3-text-black w3-padding-64" id="profile">
+    <h2 class="w3-text-black">PERSONAL PROFILE</h2>
+    <hr style="width:200px" class="w3-opacity">
+        <p style="font-size: large;">I have had experience of more than 10 years in the field of 
+            Human Resources Development, General Affairs and Industrial Relation. 
+            Besides having an attractive personality, 
+            I was a hard worker, honest, trustworthy, and focused on results.</p>
 
-            <form action="/action_page.php" target="_blank">
-                <div class="w3-section">
-                    <label>Name</label>
-                    <input class="w3-input w3-border" type="text" required name="Name">
+
+
+            <div class="col-sm-12" style="border: none;">
+                <div class="row" >
+
+                  <div class="col-sm-4 mt-4">
+                    <img src="img/img-2.jpg" alt="Bambang Nugroho">
+                  </div>
+
+                    <div class="col-sm">
+                        <ul style="font-size:large ; color: #000000" >
+                            <br><br><br>
+                            <li><p>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Bambang Nugroho</p></li>
+                            <li><p>Date of Birth: April 17th,1974</p></li>
+                            <li><p>Nationality&nbsp;&nbsp;&nbsp;&nbsp;: Indonesia</p></li>
+                            <li><p>Language&nbsp&nbsp;&nbsp;&nbsp;&nbsp;: Indonesia, English</p></li>
+                            <li><p>Phones &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:0811 175 3456</p></li>
+                            <li><p>E-mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:bambangn99@gmail.com</p></li>
+                            <li><p>Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:Permata Depok Sektor Kumala Blok E15 
+                                No. 7 RT.04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RW.07 Kel. Pondok Jaya Kec. Cipayung Kota Depok 16438</p></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="w3-section">
-                    <label>Email</label>
-                    <input class="w3-input w3-border" type="text" required name="Email">
-                </div>
-                <div class="w3-section">
-                    <label>Message</label>
-                    <input class="w3-input w3-border" required name="Message">
-                </div>
-                <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-            </form><br>
-            <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-            <footer class="w3-container w3-margin-top w3-light-grey w3-center w3-large">
-                <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
-                <a class="w3-button w3-round-xxlarge w3-small w3-dark-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
-             <!-- End footer. -->
-            </footer>
+            </div>
+
+
+
+            <div class="w3-content w3-justify w3-text-black w3-padding-64" id="experience">
+                <h2 class="w3-text-black">WORK EXPERIENCE</h2>
+                <hr style="width:200px" class="w3-opacity">
+                    <br><br>
+                    <h5>11 Years as Manager / Dept Head / Asst GM Level</h5>
+                        <ul>
+                            <li>Dept. Head HRGA</li>
+                            <li>Function Head / Head Dept. People & Organization Development</li>
+                            <li>Dept. Head GA & Industrial Relation</li>
+                            <li>IR & GA Manager</li>
+                            <li>Chief Personnel </li>
+                        </ul>
+
+                        <br><br>
+                    <h5>6 Years as Supervisor / Asst. Manager Level</h5>
+                        <ul>
+                            <li>C & B Supervisor</li>
+                        </ul>
+
+                        <br><br>
+                    <h5>2 Years as Staff Level</h5>
+                        <ul>
+                            <li>HRD Specialist</li>
+                            <li>Training & Development Specialiast</li>
+                        </ul>
+
+
+                        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+                            <h2 class="w3-text-black">Contact Me</h2>
+                            <hr style="width:200px" class="w3-opacity">
+                        
+                            <div class="w3-section">
+                              <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Depok, Jawa Barat, Indonesia</p>
+                              <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +62 811 175 3456</p>
+                              <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: bambangn99@gmail.com</p>
+                            </div><br>
 
         </div>
-
         <!-- End page content -->
     </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>
